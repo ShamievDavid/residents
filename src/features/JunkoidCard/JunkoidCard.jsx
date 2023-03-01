@@ -33,15 +33,15 @@ export const JunkoidCard = ({ setShow, show, setBlur }) => {
           Ipsum.
         </p>
       </div>
-      {/* <iframe
-        title="mr_sanguini"
+      <iframe
+        title="junkoid"
         width="100%"
         height="166"
         scrolling="no"
         frameborder="no"
         allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/803794348&color=%233d321d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-      ></iframe> */}
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1415732653&color=%233d321d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
     </div>
   );
 };
