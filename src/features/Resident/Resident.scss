@@ -1,0 +1,17 @@
+.resident_wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 360px;
+
+
+  .resident_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}

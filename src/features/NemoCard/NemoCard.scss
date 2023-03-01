@@ -1,0 +1,47 @@
+@import './src/style/variables.scss';
+
+.nemo_wrapper {
+  position: absolute;
+  top: 20px;
+  width: 712px;
+  height: 940px;
+  color: white;
+  overflow: scroll;
+
+  .nemo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .nemo_header_title {
+      font-size: 122px;
+      letter-spacing: -4px;
+      line-height: 0.8;
+      margin-left: -7px;
+    }
+
+    .nemo_header_post_title {
+      font-size: 42px;
+    }
+
+    .nemo_header_close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 35px;
+    }
+  }
+
+  .nemo_footer {
+    display: flex;
+    cursor: pointer;
+
+    .nemo_p_one {
+      padding-right: 5px;
+    }
+
+    .nemo_p_two {
+      padding-left: 5px;
+    }
+  }
+}

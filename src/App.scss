@@ -1,0 +1,16 @@
+@import './src/style/variables.scss';
+
+.app_wrapper,
+.app_wrapper_blur {
+  font-family: 'Inter', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.app_wrapper_blur {
+  backdrop-filter: blur(4px);
+}

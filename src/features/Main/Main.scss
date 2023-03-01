@@ -1,0 +1,25 @@
+@import './src/style/variables.scss';
+
+.main_wrapper,
+.main_wrapper_blur {
+  font-family: 'Inter', sans-serif;
+  background-color: $backgroundColor;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .main_description {
+    width: 1100px;
+    height: 413px;
+    color: $textColor;
+    font-size: 72px;
+    text-align: center;
+  }
+}
+
+.main_wrapper_blur {
+  filter: blur(0.3rem);
+}
