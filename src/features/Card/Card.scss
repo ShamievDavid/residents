@@ -1,0 +1,60 @@
+@import './src/style/variables.scss';
+
+.card_wrapper {
+  position: absolute;
+  top: 10%;
+  width: 500px;
+  height: 640px;
+  color: white;
+  z-index: 1000;
+
+  .card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .card_header_title {
+      font-size: 92px;
+      letter-spacing: -4px;
+      line-height: 0.8;
+      margin: 0 0 4px -7px;
+    }
+
+    .card_header_subtitle {
+      font-size: 24px;
+    }
+    .card_header_subtitle_disable {
+      display: none;
+    }
+
+    .card_header_close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 28px;
+    }
+  }
+
+  .card_footer {
+    display: flex;
+    font-size: 11px;
+    margin-top: -4px;
+    font-weight: 500;
+    line-height: 1.1;
+
+    .card_p_one {
+      padding-right: 5px;
+      width: 50%;
+    }
+
+    .card_p_two {
+      padding-left: 5px;
+      width: 50%;
+    }
+  }
+
+  .card_mix {
+    font-size: 11px;
+    font-weight: 500;
+  }
+}

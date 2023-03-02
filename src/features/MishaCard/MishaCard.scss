@@ -6,7 +6,7 @@
   width: 712px;
   height: 940px;
   color: white;
-  z-index: 10;
+  z-index: 1000;
 
   .misha_header {
     display: flex;
@@ -38,12 +38,13 @@
 
     .misha_p_one {
       padding-right: 5px;
-      width:50%;
+      width: 50%;
     }
 
     .misha_p_two {
       padding-left: 5px;
-      width:50%;
+      width: 50%;
     }
   }
 }
+

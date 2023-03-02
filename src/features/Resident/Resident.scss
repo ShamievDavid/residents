@@ -4,7 +4,8 @@
   flex-direction: column;
   width: 340px;
   height: 360px;
-
+  z-index: 10;
+  cursor: pointer;
 
   .resident_footer {
     display: flex;
@@ -12,6 +13,13 @@
     align-items: center;
     color: white;
     font-size: 22px;
-    cursor: pointer;
   }
+}
+
+.resident_wrapper:hover {
+  z-index: 100;
+}
+
+.resident_wrapper_none {
+  display: none;
 }
