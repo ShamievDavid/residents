@@ -35,7 +35,7 @@ export const Card = ({
           x
         </div>
       </div>
-      <ImageWrapper width="500px" height="500px" src={src} title="artist" />
+      <img className='card_img' src={src} alt={name} />
       <div className="card_footer">
         <p className="card_p_one">{text1}</p>
         <p className="card_p_two">{text2}</p>

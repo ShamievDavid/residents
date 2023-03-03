@@ -14,7 +14,7 @@
     width: 700px;
     height: 413px;
     color: white;
-    font-size: 42px;
+    font-size: 52px;
     text-align: center;
     line-height: 1;
   }
@@ -32,6 +32,14 @@
 }
 
 .main_wrapper_blur {
-  // filter: blur(0.5rem);
-  filter: brightness(0.2);
+  filter: blur(0.5rem) brightness(0.7);
+}
+
+@media screen and (max-width: 1440px) {
+  .main_wrapper,
+  .main_wrapper_blur {
+    .main_description {
+      font-size: 42px;
+    }
+  }
 }

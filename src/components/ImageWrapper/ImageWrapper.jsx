@@ -1,14 +1,9 @@
 import React from "react";
 import "./ImageWrapper.scss";
 
-export const ImageWrapper = ({ src, width, height, title }) => {
-  const style = {
-    width: width,
-    height: height,
-  };
-
+export const ImageWrapper = ({ src, title }) => {
   return (
-    <div className="image_wrapper" style={style}>
+    <div className="image_wrapper">
       <img
         draggable={false}
         src={src}
