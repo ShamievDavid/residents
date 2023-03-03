@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ImageWrapper } from '../../components/ImageWrapper/ImageWrapper';
 import './Card.scss';
 
 export const Card = ({
