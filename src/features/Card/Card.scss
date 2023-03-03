@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 575px) {
   .card_wrapper {
     width: 100vw;
     height: 640px;
@@ -89,8 +89,8 @@
     }
 
     .card_img {
-      width: 370px;
-      height: 370px;
+      width: 100%;
+      height: auto;
     }
   }
 }
