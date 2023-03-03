@@ -19,25 +19,27 @@ export const Main = ({ blur, setBlur, setSelected, selected }) => {
         Four riders of 20ft Radio: drive, groove, vibe & mystic will light up
         the pan-European tour this May!
       </div>
-      {Object.keys(residents).map((resident) => (
-        <Resident
-          key={resident}
-          name={residents[resident].name}
-          src={residents[resident].photo}
-          style={residents[resident].style}
-          mix={residents[resident].mix}
-          subTitle={residents[resident].subTitleText}
-          keyName={resident}
-          setSelected={setSelected}
-          setBlur={setBlur}
-          selected={selected}
-        />
-      ))}
+      <div className="main_cards">
+        {Object.keys(residents).map((resident) => (
+          <Resident
+            key={resident}
+            name={residents[resident].name}
+            src={residents[resident].photo}
+            mix={residents[resident].mix}
+            subTitle={residents[resident].subTitleText}
+            keyName={resident}
+            setSelected={setSelected}
+            setBlur={setBlur}
+            selected={selected}
+          />
+        ))}
+      </div>
+
       <div
         className="main_footer"
         onClick={() => copyToClipboard('20radio@gmail.com')}
       >
-        {copied ? 'copied 🎉' : 'e-mail'}
+        {copied ? 'copied 🎉' : 'email'}
       </div>
     </div>
   );

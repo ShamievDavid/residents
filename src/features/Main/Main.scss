@@ -5,7 +5,7 @@
   font-family: 'Inter', sans-serif;
   background-color: $backgroundColor;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
 
@@ -50,13 +50,26 @@
 @media screen and (max-width: 414px) {
   .main_wrapper,
   .main_wrapper_blur {
+    flex-direction: column;
+    width: 100vw;
+    justify-content: unset;
+
     .main_description {
       width: 100vw;
       font-size: 28px;
+      box-sizing: border-box;
+      padding: 0 25px 0 25px;
+      margin-bottom: 30px;
+    }
+
+    .main_cards {
+      margin-bottom: 30px;
+      padding-left: 35px;
     }
 
     .main_footer {
-      display: none;
+      left: 45%;
+
     }
   }
 }

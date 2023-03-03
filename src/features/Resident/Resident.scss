@@ -50,20 +50,29 @@
 
 @media screen and (max-width: 414px) {
   .resident_wrapper,
-  .resident_wrapper_misha {
-    top: 110%;
-    left: 10%;
+  .resident_wrapper_misha,
+  .resident_wrapper_david,
+  .resident_wrapper_nemo,
+  .resident_wrapper_junkoid{
+    position: static;
+    width: 360px;
+    height: 360px;
+    margin-bottom: 100px;
   }
-  .resident_wrapper_david {
-    top: 155%;
-    left: 10%;
-  }
-  .resident_wrapper_nemo {
-    top: 20%;
-    left: 10%;
-  }
-  .resident_wrapper_junkoid {
-    top: 65%;
-    left: 10%;
-  }
+  // .resident_wrapper_misha {
+  //   top: 110%;
+  //   left: 10%;
+  // }
+  // .resident_wrapper_david {
+  //   top: 155%;
+  //   left: 10%;
+  // }
+  // .resident_wrapper_nemo {
+  //   top: 20%;
+  //   left: 10%;
+  // }
+  // .resident_wrapper_junkoid {
+  //   top: 65%;
+  //   left: 10%;
+  // }
 }
