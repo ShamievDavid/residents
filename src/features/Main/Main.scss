@@ -51,7 +51,7 @@
   .main_wrapper,
   .main_wrapper_blur {
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: unset;
 
@@ -59,7 +59,7 @@
       width: 100vw;
       font-size: 24px;
       box-sizing: border-box;
-      margin-bottom: 30px;
+      margin-bottom: 90px;
       // padding: 0 7% 0 7%;
     }
 
