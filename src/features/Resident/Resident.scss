@@ -23,7 +23,11 @@
   }
 }
 
-.resident_wrapper:hover {
+.resident_wrapper:hover,
+.resident_wrapper_misha:hover,
+.resident_wrapper_david:hover,
+.resident_wrapper_nemo:hover,
+.resident_wrapper_junkoid:hover {
   z-index: 100;
 }
 
@@ -48,15 +52,15 @@
   left: 73%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
   .resident_wrapper,
   .resident_wrapper_misha,
   .resident_wrapper_david,
   .resident_wrapper_nemo,
-  .resident_wrapper_junkoid{
+  .resident_wrapper_junkoid {
     position: static;
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     margin-bottom: 100px;
   }
   // .resident_wrapper_misha {

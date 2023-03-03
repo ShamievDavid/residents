@@ -75,19 +75,22 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
   .card_wrapper {
-    width: 400px;
+    width: 100vw;
     height: 640px;
+    box-sizing: border-box;
+    padding: 0 0.5% 0.5%;
+
     .card_header {
       .card_header_subtitle {
-        font-size: 18px;
+        font-size: 14px;
       }
     }
 
     .card_img {
-      width: 400px;
-      height: 400px;
+      width: 370px;
+      height: 370px;
     }
   }
 }

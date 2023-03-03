@@ -14,3 +14,11 @@
     height: 340px;
   }
 }
+
+@media screen and (max-width: 375px){
+  .image_wrapper{
+    width: 320px;
+    height: 320px;
+  }
+}
+

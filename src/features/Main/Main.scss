@@ -47,29 +47,30 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
   .main_wrapper,
   .main_wrapper_blur {
     flex-direction: column;
     width: 100vw;
     justify-content: unset;
 
+
     .main_description {
       width: 100vw;
-      font-size: 28px;
+      font-size: 24px;
       box-sizing: border-box;
-      padding: 0 25px 0 25px;
       margin-bottom: 30px;
+      padding: 0 7% 0 7%;
     }
 
     .main_cards {
       margin-bottom: 30px;
-      padding-left: 35px;
+      padding: 0 7.5% 0 7.5%;
+      // padding-left: 35px;
     }
 
     .main_footer {
       left: 45%;
-
     }
   }
 }
