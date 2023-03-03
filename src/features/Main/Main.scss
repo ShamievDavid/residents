@@ -18,8 +18,20 @@
     text-align: center;
     line-height: 1;
   }
+
+  .main_footer {
+    position: fixed;
+    bottom: 1%;
+    left: 48%;
+    color: #666666;
+    cursor: pointer;
+  }
+  .main_footer:hover {
+    color: white;
+  }
 }
 
 .main_wrapper_blur {
-  filter: blur(0.5rem);
+  // filter: blur(0.5rem);
+  filter: brightness(0.2);
 }

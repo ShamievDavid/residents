@@ -11,15 +11,17 @@ export const residents = {
     text2: `Besides being a co-host of Morning Show and part-time djing tutor,
     David ran his own series 'Magic Pills' through which he delivered
     elegant and magnetic leftfield downtempo electronics.`,
-    width: '340px',
-    height: '340px',
-    top: '428px',
-    left: '311px',
+    style: {
+      width: '340px',
+      height: '340px',
+      top: '45%',
+      left: '23%',
+    },
     mix: (
       <iframe
         title="daveMix"
         width="100%"
-        height="166"
+        height="146"
         scrolling="no"
         frameborder="no"
         allow="autoplay"
@@ -31,6 +33,7 @@ export const residents = {
     name: 'Misha',
     photo: './photo/Misha.png',
     subTitle: true,
+    subTitleText: '(from the Radio)',
     text1: `Kyiv-based slacker Misha started djing in 2017 on Amsterdam’s Red
     Light Radio with his show ‘Where on Earth’, dedicated to Ukraine's
     underground and naive music. After the 20ft Radio launch, he became a
@@ -41,15 +44,12 @@ export const residents = {
     fun. Working with mood rather than music styles, his musical jokes and
     unpredictable turns of storytelling keeps the audience in a trippy
     mood, leaving no chance to cling to something.`,
-    width: '340px',
-    height: '340px',
-    top: '180px',
-    left: '19px',
+    style: { width: '340px', height: '340px', top: '20%', left: '2%' },
     mix: (
       <iframe
         title="misha_mix"
         width="100%"
-        height="166"
+        height="146"
         scrolling="no"
         frameborder="no"
         allow="autoplay"
@@ -70,15 +70,12 @@ export const residents = {
     thematic series like Alienation or Anadolu Invasion. Recently he moved
     to the Netherlands where he started his monthly lo-fi music show
     ‘Boredom Kingdom’ on Rotterdam’s Operator Radio.`,
-    width: '340px',
-    height: '340px',
-    top: '229px',
-    left: '750px',
+    style: { width: '340px', height: '340px', top: '30%', left: '51%' },
     mix: (
       <iframe
         title="nemo_mix"
         width="100%"
-        height="166"
+        height="146"
         scrolling="no"
         frameborder="no"
         allow="autoplay"
@@ -100,15 +97,12 @@ export const residents = {
     containing Lorem Ipsum passages, and more recently with desktop
     publishing software like Aldus PageMaker including versions of Lorem
     Ipsum.`,
-    width: '340px',
-    height: '340px',
-    top: '410px',
-    left: '1050px',
+    style: { width: '340px', height: '340px', top: '50%', left: '73%' },
     mix: (
       <iframe
         title="junkoidMix"
         width="100%"
-        height="166"
+        height="146"
         scrolling="no"
         frameborder="no"
         allow="autoplay"

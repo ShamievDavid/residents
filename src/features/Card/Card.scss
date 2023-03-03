@@ -21,7 +21,7 @@
     }
 
     .card_header_subtitle {
-      font-size: 24px;
+      font-size: 30px;
     }
     .card_header_subtitle_disable {
       display: none;
@@ -56,5 +56,14 @@
   .card_mix {
     font-size: 11px;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    cursor: pointer;
+    color: #666666;
+  }
+
+  .card_mix:hover {
+    color: white;
   }
 }

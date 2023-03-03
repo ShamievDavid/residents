@@ -6,15 +6,15 @@ import './Resident.scss';
 export const Resident = ({
   name,
   src,
-  width,
-  height,
   setBlur,
-  top,
-  left,
   setSelected,
   selected,
   keyName,
+  style,
+  subTitle,
 }) => {
+  const { width, height, top, left } = style;
+
   const handleShow = () => {
     setBlur(true);
     setSelected(keyName);
@@ -22,13 +22,14 @@ export const Resident = ({
 
   return (
     <div
-      className={selected ? 'resident_wrapper_none' : 'resident_wrapper'}
+      className={selected === keyName ? 'resident_wrapper_none' : 'resident_wrapper'}
       onClick={handleShow}
       style={{ top: top, left: left }}
     >
       <ImageWrapper src={src} width={width} height={height} />
       <div className="resident_footer">
         <div>{name}</div>
+        <div className='resident_subTitle'>{subTitle}</div>
         {/* <SearchIcon /> */}
       </div>
     </div>

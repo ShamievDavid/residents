@@ -29,7 +29,7 @@ export const Card = ({
             subTitle ? 'card_header_subtitle' : 'card_header_subtitle_disable'
           }
         >
-          (from the radio)
+          (from the Radio)
         </div>
         <div className="card_header_close" onClick={handleClose}>
           x
@@ -40,13 +40,10 @@ export const Card = ({
         <p className="card_p_one">{text1}</p>
         <p className="card_p_two">{text2}</p>
       </div>
-      {expandMix ? (
-        mix
-      ) : (
-        <div className="card_mix" onClick={() => setExpandMix(!expandMix)}>
-          listen to mix
-        </div>
-      )}
+      <div className="card_mix" onClick={() => setExpandMix(!expandMix)}>
+        {expandMix ? 'close' : 'listen to mix'}
+      </div>
+      {expandMix && mix}
     </div>
   );
 };
