@@ -47,11 +47,13 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 575px) {
   .main_wrapper,
   .main_wrapper_blur {
     flex-direction: column;
     width: 100vw;
+    align-items: center;
     justify-content: unset;
 
 
