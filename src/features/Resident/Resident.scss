@@ -1,4 +1,8 @@
-.resident_wrapper {
+.resident_wrapper,
+.resident_wrapper_misha,
+.resident_wrapper_david,
+.resident_wrapper_nemo,
+.resident_wrapper_junkoid {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -13,7 +17,7 @@
     color: white;
     font-size: 22px;
   }
-  .resident_subTitle{
+  .resident_subTitle {
     font-size: 12px;
     margin: 0 0 -6px 2px;
   }
@@ -25,4 +29,41 @@
 
 .resident_wrapper_none {
   display: none;
+}
+
+.resident_wrapper_misha {
+  top: 20%;
+  left: 2%;
+}
+.resident_wrapper_david {
+  top: 45%;
+  left: 23%;
+}
+.resident_wrapper_nemo {
+  top: 30%;
+  left: 51%;
+}
+.resident_wrapper_junkoid {
+  top: 50%;
+  left: 73%;
+}
+
+@media screen and (max-width: 414px) {
+  .resident_wrapper,
+  .resident_wrapper_misha {
+    top: 110%;
+    left: 10%;
+  }
+  .resident_wrapper_david {
+    top: 155%;
+    left: 10%;
+  }
+  .resident_wrapper_nemo {
+    top: 20%;
+    left: 10%;
+  }
+  .resident_wrapper_junkoid {
+    top: 65%;
+    left: 10%;
+  }
 }

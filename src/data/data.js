@@ -12,8 +12,6 @@ export const residents = {
     David ran his own series 'Magic Pills' through which he delivered
     elegant and magnetic leftfield downtempo electronics.`,
     style: {
-      width: '340px',
-      height: '340px',
       top: '45%',
       left: '23%',
     },
@@ -44,7 +42,7 @@ export const residents = {
     fun. Working with mood rather than music styles, his musical jokes and
     unpredictable turns of storytelling keeps the audience in a trippy
     mood, leaving no chance to cling to something.`,
-    style: { width: '340px', height: '340px', top: '20%', left: '2%' },
+    style: { top: '20%', left: '2%' },
     mix: (
       <iframe
         title="misha_mix"
@@ -70,7 +68,7 @@ export const residents = {
     thematic series like Alienation or Anadolu Invasion. Recently he moved
     to the Netherlands where he started his monthly lo-fi music show
     ‘Boredom Kingdom’ on Rotterdam’s Operator Radio.`,
-    style: { width: '340px', height: '340px', top: '30%', left: '51%' },
+    style: { top: '30%', left: '51%' },
     mix: (
       <iframe
         title="nemo_mix"
@@ -97,7 +95,7 @@ export const residents = {
     containing Lorem Ipsum passages, and more recently with desktop
     publishing software like Aldus PageMaker including versions of Lorem
     Ipsum.`,
-    style: { width: '340px', height: '340px', top: '50%', left: '73%' },
+    style: { top: '50%', left: '73%' },
     mix: (
       <iframe
         title="junkoidMix"

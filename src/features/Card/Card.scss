@@ -44,7 +44,7 @@
   .card_footer {
     display: flex;
     font-size: 11px;
-    margin-top: -4px;
+    margin-top: -6px;
     font-weight: 500;
     line-height: 1.1;
 
@@ -72,5 +72,22 @@
 
   .card_mix:hover {
     color: white;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .card_wrapper {
+    width: 400px;
+    height: 640px;
+    .card_header {
+      .card_header_subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .card_img {
+      width: 400px;
+      height: 400px;
+    }
   }
 }

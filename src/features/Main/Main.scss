@@ -5,13 +5,13 @@
   font-family: 'Inter', sans-serif;
   background-color: $backgroundColor;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 
   .main_description {
     margin-top: 20px;
-    width: 700px;
+    width: 850px;
     height: 413px;
     color: white;
     font-size: 52px;
@@ -26,6 +26,7 @@
     color: #666666;
     cursor: pointer;
   }
+
   .main_footer:hover {
     color: white;
   }
@@ -39,7 +40,23 @@
   .main_wrapper,
   .main_wrapper_blur {
     .main_description {
+      width: 700px;
+      height: 413px;
       font-size: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .main_wrapper,
+  .main_wrapper_blur {
+    .main_description {
+      width: 100vw;
+      font-size: 28px;
+    }
+
+    .main_footer {
+      display: none;
     }
   }
 }
