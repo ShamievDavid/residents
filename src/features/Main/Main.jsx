@@ -13,6 +13,7 @@ export const Main = ({ blur, setBlur, setSelected, selected }) => {
       setCopied(false);
     }, 1000);
   };
+
   return (
     <div className={blur ? 'main_wrapper_blur' : 'main_wrapper'}>
       <div className="main_description">
@@ -35,12 +36,13 @@ export const Main = ({ blur, setBlur, setSelected, selected }) => {
         ))}
       </div>
 
-      <div
+      <a
         className="main_footer"
-        onClick={() => copyToClipboard('20radio@gmail.com')}
+        // onClick={() => copyToClipboard('20radio@gmail.com')}
+        href="mailto:20ftradio@gmail.com"
       >
-        {copied ? 'copied 🎉' : 'email'}
-      </div>
+        {copied ? 'copied 🎉' : 'for booking'}
+      </a>
     </div>
   );
 };

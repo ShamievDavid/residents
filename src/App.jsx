@@ -8,8 +8,13 @@ function App() {
   const [blur, setBlur] = useState(false);
   const [selected, setSelected] = useState(null);
 
+  const handleClose = () => {
+    setSelected(null);
+    setBlur(false);
+  };
+
   return (
-    <div className="app_wrapper">
+    <div className="app_wrapper" onClick={selected ? handleClose : undefined}>
       <Main
         blur={blur}
         setBlur={setBlur}

@@ -20,7 +20,7 @@ export const Card = ({
   console.log('mix', mix);
 
   return (
-    <div className="card_wrapper">
+    <div className="card_wrapper" onClick={(e) => e.stopPropagation()}>
       <div className="card_header">
         <div className="card_header_title">{name}</div>
         <div
