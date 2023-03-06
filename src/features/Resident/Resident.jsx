@@ -31,7 +31,6 @@ export const Resident = ({
       <ImageWrapper src={src} />
       <div className="resident_footer">
         <div>{name}</div>
-        <div className="resident_subTitle">{subTitle}</div>
       </div>
     </div>
   );

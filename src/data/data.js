@@ -30,7 +30,7 @@ export const residents = {
   misha: {
     name: 'Misha',
     photo: './photo/Misha.png',
-    subTitle: true,
+    subTitle: false,
     subTitleText: '(from the Radio)',
     text1: `Kyiv-based slacker Misha started djing in 2017 on Amsterdam’s Red
     Light Radio with his show ‘Where on Earth’, dedicated to Ukraine's
