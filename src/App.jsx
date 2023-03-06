@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.scss';
 import { Main } from './features/Main';
 import { Card } from './features/Card/Card';
@@ -7,6 +7,14 @@ import { residents } from './data';
 function App() {
   const [blur, setBlur] = useState(false);
   const [selected, setSelected] = useState(null);
+
+  useEffect(() => {
+    window.onload = function () {
+      setTimeout(function () {
+        window.scrollTo(0, 1);
+      }, 0);
+    };
+  }, []);
 
   const handleClose = () => {
     setSelected(null);
