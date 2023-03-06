@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { residents } from '../../data';
 import { Resident } from '../Resident/Resident';
 import './Main.scss';
