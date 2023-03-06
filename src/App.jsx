@@ -14,6 +14,7 @@ function App() {
 
     const onScroll = () => {
       lastScrollY = window.scrollY;
+      console.log('scroll', lastScrollY);
 
       if (!ticking) {
         window.requestAnimationFrame(() => {
