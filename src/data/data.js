@@ -85,16 +85,9 @@ export const residents = {
     name: 'Junkoid',
     photo: './photo/Junkoid.png',
     subTitle: false,
-    text1: `          Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text ever
-    since the 1500s, when an unknown printer took a galley of type and
-    scrambled it to make a type specimen book.`,
-    text2: `          It has survived not only five centuries, but also the leap into
-    electronic typesetting, remaining essentially unchanged. It was
-    popularised in the 1960s with the release of Letraset sheets
-    containing Lorem Ipsum passages, and more recently with desktop
-    publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
+    text1: `Mastermind behind the Unaussprechlichen Kulten show on 20ft Radio, where he leads the endless pilgrimage to other side of the music ark since 2017. Mastermind behind the Unaussprechlichen Kulten show on 20ft Radio, where he leads the endless pilgrimage to other side of the music ark since 2017. One of the most interesting investigations can be considered a series of episodes about the Japanese no-wave of the 80s and the Ukrainian indie scene of the 1980s - 2000s. In addition, a contributor in such radio shows as Lovely Songs For Lovers, Alienation, Healing Hour, etc.  `,
+    text2: `Anthony's selections are performed as cross-genre audio narratives, where obscure experimentalism replaces hidden sentiment, and subterranean acoustics sounds like an ethereal call. Filled with rarities and unexpected finds, his mixes were released both on local music spots - Krossfingers, CХЕМА, Pep Gaffe, etc., and on foreign ones, like LYL Radio, ROOT Radio, narr.radio, Bamboo Shows, Operator Radio. Listening to them, you can catch that invisible wonderful musical moment when bestial comes celestial!
+    `,
     style: { top: '50%', left: '73%' },
     mix: (
       <iframe
