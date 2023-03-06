@@ -4,16 +4,6 @@ import { Resident } from '../Resident/Resident';
 import './Main.scss';
 
 export const Main = ({ blur, setBlur, setSelected, selected }) => {
-  const [copied, setCopied] = useState(false);
-
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 1000);
-  };
-
   return (
     <div className={blur ? 'main_wrapper_blur' : 'main_wrapper'}>
       <div className="main_description">
@@ -38,10 +28,9 @@ export const Main = ({ blur, setBlur, setSelected, selected }) => {
 
       <a
         className="main_footer"
-        // onClick={() => copyToClipboard('20radio@gmail.com')}
         href="mailto:20ftradio@gmail.com"
       >
-        {copied ? 'copied 🎉' : 'for booking'}
+        for booking
       </a>
     </div>
   );
