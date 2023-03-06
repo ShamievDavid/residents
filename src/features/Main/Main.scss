@@ -52,26 +52,22 @@
   .main_wrapper,
   .main_wrapper_blur {
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     justify-content: unset;
 
     .main_description {
-      width: 100vw;
+      width: 90%;
       font-size: 24px;
-      box-sizing: border-box;
       margin-bottom: 90px;
-      // padding: 0 7% 0 7%;
     }
 
     .main_cards {
       margin-bottom: 30px;
-      // padding: 0 7.5% 0 7.5%;
-      // padding-left: 35px;
     }
 
     .main_footer {
-      left: 45%;
+      left: 40%;
     }
   }
 }
