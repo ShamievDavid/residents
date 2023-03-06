@@ -25,7 +25,6 @@ export const Main = ({ blur, setBlur, setSelected, selected }) => {
           />
         ))}
       </div>
-
       <a
         className="main_footer"
         href="mailto:20ftradio@gmail.com"

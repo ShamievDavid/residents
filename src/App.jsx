@@ -9,10 +9,32 @@ function App() {
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
-    window.onload = function () {
-      setTimeout(function () {
+    let lastScrollY = 0;
+    let ticking = false;
+
+    const onScroll = () => {
+      lastScrollY = window.scrollY;
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          hideAddressBar();
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    };
+
+    const hideAddressBar = () => {
+      if (window.scrollY > lastScrollY) {
         window.scrollTo(0, 1);
-      }, 0);
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
     };
   }, []);
 
