@@ -1,8 +1,7 @@
 @import './src/style/variables.scss';
 
 .card_wrapper,
-.card_wrapper_junkoid
-{
+.card_wrapper_junkoid {
   position: absolute;
   top: 10%;
   width: 500px;
@@ -77,8 +76,8 @@
   }
 }
 
-.card_wrapper_junkoid{
-  .card_header{
+.card_wrapper_junkoid {
+  .card_header {
     .card_header_title {
       font-size: 60px;
       letter-spacing: -4px;
@@ -89,41 +88,27 @@
 }
 
 @media screen and (max-width: 575px) {
-  .card_wrapper {
+  .card_wrapper,
+  .card_wrapper_junkoid {
     width: 100vw;
     height: 640px;
     box-sizing: border-box;
     padding: 0 0.5% 0.5%;
-
-    .card_header {
-      .card_header_subtitle {
-        font-size: 14px;
-      }
-    }
 
     .card_img {
       width: 100%;
       height: auto;
     }
   }
-}
 
-@media screen and (max-width: 575px) {
-  .card_wrapper {
-    width: 100vw;
-    height: 640px;
-    box-sizing: border-box;
-    padding: 0 0.5% 0.5%;
-
+  .card_wrapper_junkoid {
     .card_header {
-      .card_header_subtitle {
-        font-size: 14px;
+      .card_header_title {
+        font-size: 48px;
+        letter-spacing: -4px;
+        line-height: 1.2;
+        margin: 0;
       }
-    }
-
-    .card_img {
-      width: 100%;
-      height: auto;
     }
   }
 }
