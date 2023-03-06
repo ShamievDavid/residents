@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageWrapper } from '../../components/ImageWrapper/ImageWrapper';
+import { getClassName } from '../../utils';
 import './Resident.scss';
 
 export const Resident = ({
@@ -9,22 +10,16 @@ export const Resident = ({
   setSelected,
   selected,
   keyName,
-  subTitle,
 }) => {
-
   const handleShow = () => {
     setBlur(true);
     setSelected(keyName);
   };
 
-  const getClassName = () => {
-    return `resident_wrapper_${keyName}`;
-  };
-
   return (
     <div
       className={
-        selected === keyName ? 'resident_wrapper_none' : getClassName()
+        selected === keyName ? 'resident_wrapper_none' : getClassName(keyName)
       }
       onClick={handleShow}
     >

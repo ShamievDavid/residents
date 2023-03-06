@@ -82,7 +82,7 @@ export const residents = {
     ),
   },
   junkoid: {
-    name: 'Junkoid',
+    name: 'Anthony Junkoid',
     photo: './photo/Junkoid.png',
     subTitle: false,
     text1: `Mastermind behind the Unaussprechlichen Kulten show on 20ft Radio, where he leads the endless pilgrimage to other side of the music ark since 2017. Mastermind behind the Unaussprechlichen Kulten show on 20ft Radio, where he leads the endless pilgrimage to other side of the music ark since 2017. One of the most interesting investigations can be considered a series of episodes about the Japanese no-wave of the 80s and the Ukrainian indie scene of the 1980s - 2000s. In addition, a contributor in such radio shows as Lovely Songs For Lovers, Alienation, Healing Hour, etc.  `,

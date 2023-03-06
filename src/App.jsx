@@ -23,6 +23,7 @@ function App() {
       />
       {selected && (
         <Card
+          keyName={selected}
           setSelected={setSelected}
           setBlur={setBlur}
           name={residents[selected].name}

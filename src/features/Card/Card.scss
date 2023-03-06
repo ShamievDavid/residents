@@ -1,6 +1,8 @@
 @import './src/style/variables.scss';
 
-.card_wrapper {
+.card_wrapper,
+.card_wrapper_junkoid
+{
   position: absolute;
   top: 10%;
   width: 500px;
@@ -72,6 +74,17 @@
 
   .card_mix:hover {
     color: #666666;
+  }
+}
+
+.card_wrapper_junkoid{
+  .card_header{
+    .card_header_title {
+      font-size: 60px;
+      letter-spacing: -4px;
+      line-height: 1.2;
+      margin: 0 0 0 -5px;
+    }
   }
 }
 
