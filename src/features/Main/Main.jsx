@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { residents } from '../../data';
 import { Resident } from '../Resident/Resident';
 import './Main.scss';
 
 export const Main = ({ blur, setBlur, setSelected, selected }) => {
+  useEffect(() => {
+    window.scrollTo(0, 1);
+  }, []);
   return (
     <div className={blur ? 'main_wrapper_blur' : 'main_wrapper'}>
       <div className="main_description">
@@ -25,10 +28,7 @@ export const Main = ({ blur, setBlur, setSelected, selected }) => {
           />
         ))}
       </div>
-      <a
-        className="main_footer"
-        href="mailto:20ftradio@gmail.com"
-      >
+      <a className="main_footer" href="mailto:20ftradio@gmail.com">
         for booking
       </a>
     </div>
