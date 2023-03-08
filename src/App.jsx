@@ -9,7 +9,14 @@ function App() {
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
-    window.scrollTo(0, 1);
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos > 0) {
+        window.scrollTo(0, 1);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleClose = () => {

@@ -5,8 +5,16 @@ import './Main.scss';
 
 export const Main = ({ blur, setBlur, setSelected, selected }) => {
   useEffect(() => {
-    window.scrollTo(0, 1);
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos > 0) {
+        window.scrollTo(0, 1);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   return (
     <div className={blur ? 'main_wrapper_blur' : 'main_wrapper'}>
       <div className="main_description">
