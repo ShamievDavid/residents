@@ -1,20 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { residents } from '../../data';
 import { Resident } from '../Resident/Resident';
 import './Main.scss';
 
 export const Main = ({ blur, setBlur, setSelected, selected }) => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      if (currentScrollPos > 0) {
-        window.scrollTo(0, 1);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <div className={blur ? 'main_wrapper_blur' : 'main_wrapper'}>
       <div className="main_description">

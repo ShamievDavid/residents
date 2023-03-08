@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import { Main } from './features/Main';
 import { Card } from './features/Card/Card';
@@ -7,17 +7,6 @@ import { residents } from './data';
 function App() {
   const [blur, setBlur] = useState(false);
   const [selected, setSelected] = useState(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      if (currentScrollPos > 0) {
-        window.scrollTo(0, 1);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleClose = () => {
     setSelected(null);
