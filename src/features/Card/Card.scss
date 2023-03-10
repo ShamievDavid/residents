@@ -40,7 +40,6 @@
   .card_img {
     width: 500px;
     height: 500px;
-
   }
 
   .card_footer {
@@ -95,7 +94,8 @@
   .card_wrapper,
   .card_wrapper_junkoid {
     width: 100vw;
-    height: 640px;
+    height: auto;
+    top: 10vh;
     box-sizing: border-box;
     padding: 0 0.5% 0.5%;
 
